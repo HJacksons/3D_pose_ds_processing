@@ -1,0 +1,7 @@
+processed_ds_r/
+venv
+backup_advanced
+
+.idea/
+*.iml
+*.ipr
