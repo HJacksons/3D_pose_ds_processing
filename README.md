@@ -1,15 +1,34 @@
-# Dataset Preprocessing
-Camera pose dataset preprocessing for use with NeRF models
- * Split dataset and generate respective transforms
- * Generates depth of test images using [MiDas model](https://github.com/HJacksons/MiDaS)
- * Generates additional features
-   * Camera angle
-   * Rotation
-## Usage
-* Only the images directory with the images for the scene is required. You dont need the train, test and val as the algorithm generates them.
-* You must have the corresponding transforms.json file present for the images in the image directory. The other transforms are generated together with train, test and val, respectively
+# Dataset Preprocessing for NeRF Models
 
-   * Run the only .py file in the src directory
-   * For generating depth images for the test images,
-      * copy the test images directory to the MiDas repository and run test_depth.py
-      * resulting depth images in the output directory in Midas can be copied to the test images directory and transferred to the dataset preprocessing project repository
+This repository provides tools for preprocessing camera pose datasets for use with Neural Radiance Fields (NeRF) models.
+
+## Features
+
+- **Split Dataset**: Automatically splits the dataset into training, testing, and validation subsets.
+- **Depth Generation**: Utilizes the MiDaS model to generate depth information for test images.
+- **Additional Features Generation**:
+  - Camera Angle
+  - Rotation
+
+## Usage
+
+### Prerequisites
+
+- **Images Directory**: Ensure you have a directory containing all the images for the scene.
+- **Transforms File**: A `transforms.json` file must be present in the images directory. The additional transforms for training, testing, and validation will be generated automatically.
+
+### Steps
+
+1. **Run Preprocessing Script**:
+   - Navigate to the `src` directory.
+   - Run the only `.py` file present to start preprocessing.
+
+2. **Generate Depth Images** (for test images):
+   - Copy the test images directory to the MiDaS repository.
+   - Run `test_depth.py` in the MiDaS repository.
+   - The resulting depth images in MiDaS's output directory should be moved back to the test images directory in your dataset preprocessing project.
+
+### Notes
+
+- The algorithm automatically generates `train`, `test`, and `val` directories. You don't need to create these manually.
+- Make sure to transfer the processed depth images from MiDaS to the appropriate directory in your dataset preprocessing project.
