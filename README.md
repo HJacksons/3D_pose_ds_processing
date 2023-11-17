@@ -5,7 +5,7 @@ This repository provides tools for preprocessing camera pose datasets for use wi
 ## Features
 
 - **Split Dataset**: Automatically splits the dataset into training, testing, and validation subsets.
-- **Depth Generation**: Utilizes the MiDaS model to generate depth information for test images.
+- **Depth Generation**: Utilizes the [MiDaS model](https://github.com/HJacksons/MiDaS) to generate depth information for test images.
 - **Additional Features Generation**:
   - Camera Angle
   - Rotation
