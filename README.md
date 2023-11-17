@@ -1,8 +1,8 @@
 # Dataset Preprocessing
 Camera pose dataset preprocessing for use with NeRF models
  * Split dataset and generate respective transforms
- * Generate depth of test images using [MiDas model](https://github.com/HJacksons/MiDaS)
- * Generate additional features
+ * Generates depth of test images using [MiDas model](https://github.com/HJacksons/MiDaS)
+ * Generates additional features
    * Camera angle
    * Rotation
 ## Usage
