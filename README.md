@@ -7,7 +7,7 @@ Camera pose dataset preprocessing for use with NeRF models
    * Rotation
 ## Usage
 * Only the images directory with the images for the scene is required. You dont need the train, test and val as the algorithm generates them.
-* You must have the corresponding transforms.json file present for the images in the image directory. the other transforms are generated together with train, test and val, respectively
+* You must have the corresponding transforms.json file present for the images in the image directory. The other transforms are generated together with train, test and val, respectively
 
    * Run the only .py file in the src directory
    * For generating depth images for the test images,
