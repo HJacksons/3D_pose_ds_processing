@@ -15,7 +15,7 @@ This repository provides tools for preprocessing camera pose datasets for use wi
 ### Prerequisites
 
 - **Images Directory**: Ensure you have a directory containing all the images for the scene.
-- **Transforms File**: A `transforms.json` file must be present in the images directory. The additional transforms for training, testing, and validation will be generated automatically.
+- **Transforms File**: A `transforms.json` file must be present along images directory. The additional transforms for training, testing, and validation will be generated automatically.
 
 ### Steps
 
@@ -26,7 +26,7 @@ This repository provides tools for preprocessing camera pose datasets for use wi
 2. **Generate Depth Images** (for test images):
    - Copy the test images directory to the MiDaS repository.
    - Run `test_depth.py` in the MiDaS repository.
-   - The resulting depth images in MiDaS's output directory should be moved back to the test images directory in your dataset preprocessing project.
+   - The resulting depth images in MiDaS's "output" directory should be moved back to the test images directory in your dataset preprocessing project.
 
 ### Notes
 
